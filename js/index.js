@@ -12,3 +12,16 @@ document.addEventListener("DOMContentLoaded", function(){
         window.location = "products.html"
     });
 });
+
+document.addEventListener('DOMContentLoaded',()=>{
+    let usuario = localStorage.getItem('user');
+
+    document.getElementById('email').innerHTML=email;
+})
+
+if (email == null){
+    alert("No hay usuario ingresado");
+    location.href="login.html";
+} else {
+    document.getElementById('email').innerHTML= email;
+}
